@@ -41,8 +41,7 @@ print(data)
 #         print(p.text)
 
 # print(soup.text)
-with open('webscraping.csv', 'a') as csv_file: #TODO why 'a'? if use nothing or newline=' ' it gives error
+with open('webscraping.csv', 'a') as csv_file: #why 'a'? if use nothing or newline=' ' it gives error
     write = csv.writer(csv_file) # csv_file from above line could be any name
     for name, price in data:
         write.writerow([name,price,datetime.now()])
-
