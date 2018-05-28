@@ -14,8 +14,8 @@ url1 = ['https://www.bloomberg.com/quote/SPX:IND','https://www.bloomberg.com/quo
 data = []
 for page in url1:
 
- http = urllib3.PoolManager()
- r = http.request('GET',page)
+ http = urllib3.PoolManager() #-->create poolmanager instance
+ r = http.request('GET',page) #--> returns a HTTPresponse object which has attributes STATES, DATA and HEADER
 
 # js =json.loads(r.data.decode('utf-8'))
 # print(r.data)
