@@ -15,7 +15,7 @@ data = []
 for page in url1:
 
  http = urllib3.PoolManager() #-->create poolmanager instance
- r = http.request('GET',page) #--> returns a HTTPresponse object which has attributes STATES, DATA and HEADER
+ r = http.request('GET',page) #--> returns a HTTPresponse object which has attributes STATES, DATA and HEADER  ##### URRLIB3 USES THE REQUESTS LIBRARY HERE
 
 # js =json.loads(r.data.decode('utf-8'))
 # print(r.data)
